@@ -1,0 +1,24 @@
+{
+  "name": "armybuilderhorus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheVengeur/ArmyBuilderHorus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheVengeur/ArmyBuilderHorus/issues"
+  },
+  "homepage": "https://github.com/TheVengeur/ArmyBuilderHorus#readme",
+  "description": "",
+  "dependencies": {
+    "libsodium-wrappers": "^0.7.15",
+    "libsodium-wrappers-sumo": "^0.7.14"
+  }
+}
