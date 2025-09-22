@@ -5,8 +5,8 @@
   "files": [
     {
       "path": "catalog.core.json.enc",
-      "bytes": 200,
-      "sha256": "6595dbd13cfdbdd77f8e6a479e5b84c02e5ac2a5c8094fd7641efd31d2a7c950"
+      "bytes": 188,
+      "sha256": "8e2d5334dbf22f450d29c7067aa999819d5c497a097ca5282a7ea71603cfafef"
     },
     {
       "path": "probe.enc",
