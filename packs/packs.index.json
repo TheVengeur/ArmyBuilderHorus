@@ -1,6 +1,6 @@
 ﻿{
-  "version": "2025.09.24c",
+  "version": "2025.09.24d",
   "packs": [
-    { "id": "core", "file": "catalog.core.json.enc", "version": "2025.09.24c", "sha256": "5ebe25166b699cdca51720ff635a49289b52eb25d76cb513ad76b390b28c9ee2" }
+    { "id": "core", "file": "catalog.core.json.enc", "version": "2025.09.24d", "sha256": "5ebe25166b699cdca51720ff635a49289b52eb25d76cb513ad76b390b28c9ee2" }
   ]
 }
