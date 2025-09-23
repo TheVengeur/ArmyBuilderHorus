@@ -1,7 +1,7 @@
 {
   "format": 1,
   "version": "2025.09.23",
-  "base_url": "https://raw.githubusercontent.com/<USER>/<REPO>/main/packs/",
+  "base_url": "https://raw.githubusercontent.com/TheVenger/ArmyBuilderHorus/main/packs/",
   "files": [
     {
       "path": "catalog.core.json.enc",
