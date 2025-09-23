@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArmyBuilderHorus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8737fbe1c2e449cc14f0a683df78eda95d3ae910")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a98b6790d7da2bea672b31e811914280cb6b5553")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArmyBuilderHorus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArmyBuilderHorus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

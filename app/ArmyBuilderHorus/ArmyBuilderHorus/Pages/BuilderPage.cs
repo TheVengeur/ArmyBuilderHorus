@@ -1,6 +1,6 @@
 ﻿using ArmyBuilderHorus.Models;
 using ArmyBuilderHorus.Services;
-using Microsoft.Maui.ApplicationModel; // MainThread
+using Microsoft.Maui.ApplicationModel;
 
 namespace ArmyBuilderHorus.Pages;
 
@@ -14,9 +14,12 @@ public sealed class BuilderPage : ContentPage
     private Org? _org;
 
     private readonly Dictionary<string, int> _slotCounts = new(StringComparer.OrdinalIgnoreCase);
+    private readonly Dictionary<string, int> _compulsoryCounts = new(StringComparer.OrdinalIgnoreCase);
     private readonly List<(ArmyUnit unit, ArmyListItem item)> _items = new();
 
-    // UI réutilisable (créée une fois)
+    private RulesEngine? _rules;
+
+    // UI
     private readonly Label _totalLbl = new() { Margin = new Thickness(16, 0) };
     private readonly Label _statusLbl = new() { Margin = new Thickness(16, 0) };
     private readonly Grid _grid = new() { Padding = 16 };
@@ -28,7 +31,7 @@ public sealed class BuilderPage : ContentPage
         _meta = meta;
         Title = $"Builder • {meta.name}";
 
-        // Structure fixe une fois pour toutes
+        // Grid static
         _grid.ColumnDefinitions.Add(new ColumnDefinition(GridLength.Star));
         _grid.ColumnDefinitions.Add(new ColumnDefinition(GridLength.Auto));
         _grid.ColumnDefinitions.Add(new ColumnDefinition(GridLength.Auto));
@@ -51,6 +54,15 @@ public sealed class BuilderPage : ContentPage
         _cat = await _catalogSvc.LoadAsync();
         _org = _cat.orgs.FirstOrDefault(o => o.id == _meta.focId);
 
+        var ctx = new ArmyContext
+        {
+            ArmyId = _meta.armyId,
+            Allegiance = _meta.allegiance,
+            LegionId = _meta.legionId,
+            RiteId = _meta.riteId
+        };
+        _rules = new RulesEngine(_cat, ctx, _meta);
+
         var full = await _store.LoadFullAsync(_meta.filePath);
         _items.Clear();
         if (full?.items != null)
@@ -69,27 +81,32 @@ public sealed class BuilderPage : ContentPage
         }
 
         await SaveAsync();
-        Render(); // premier rendu
+        Render();
     }
 
     private void Render()
     {
-        // S’appuie d’être sur le thread UI
         MainThread.BeginInvokeOnMainThread(() =>
         {
-            // Recalcule compteurs
+            // Recompute counts
             _slotCounts.Clear();
-            foreach (var s in _org!.slots.Keys) _slotCounts[s] = 0;
+            _compulsoryCounts.Clear();
+            foreach (var s in _org!.slots.Keys) { _slotCounts[s] = 0; _compulsoryCounts[s] = 0; }
+
             foreach (var it in _items)
-                if (_slotCounts.ContainsKey(it.unit.slot))
-                    _slotCounts[it.unit.slot] += it.item.qty;
+            {
+                var slot = _rules!.EffectiveSlot(it.unit);
+                if (_slotCounts.ContainsKey(slot)) _slotCounts[slot] += it.item.qty;
+                if (_compulsoryCounts.ContainsKey(slot) && _rules!.IsCompulsoryEligible(it.unit, slot))
+                    _compulsoryCounts[slot] += it.item.qty;
+            }
 
             _totalLbl.Text = $"Total: {TotalPoints()} / {_meta.points} pts";
             var valid = Valid();
             _statusLbl.Text = valid ? "Liste valide ✅" : "Contraintes non respectées ⚠️";
             _statusLbl.TextColor = valid ? Colors.Green : Colors.OrangeRed;
 
-            // ---- Table des slots (on nettoie puis on remplit) ----
+            // Slots grid
             _grid.Children.Clear();
             _grid.RowDefinitions.Clear();
             void Add(View v, int r, int c) { _grid.Add(v); Grid.SetRow(v, r); Grid.SetColumn(v, c); }
@@ -112,14 +129,29 @@ public sealed class BuilderPage : ContentPage
                 Add(new Label { Text = s.min.ToString(), HorizontalTextAlignment = TextAlignment.End, WidthRequest = 40 }, r, 1);
                 Add(new Label { Text = s.max.ToString(), HorizontalTextAlignment = TextAlignment.End, WidthRequest = 40 }, r, 2);
 
-                var cur = _slotCounts.TryGetValue(slot, out var c) ? c : 0;
-                var curLbl = new Label
+                var total = _slotCounts.TryGetValue(slot, out var c) ? c : 0;
+                Label curLbl;
+                if (slot.Equals("TROOPS", StringComparison.OrdinalIgnoreCase))
                 {
-                    Text = cur.ToString(),
-                    HorizontalTextAlignment = TextAlignment.End,
-                    WidthRequest = 50,
-                    TextColor = cur < s.min ? Colors.OrangeRed : Colors.Green
-                };
+                    var comp = _compulsoryCounts[slot];
+                    curLbl = new Label
+                    {
+                        Text = $"{total}  (obligatoires: {comp}/{s.min})",
+                        HorizontalTextAlignment = TextAlignment.End,
+                        WidthRequest = 140,
+                        TextColor = comp < s.min ? Colors.OrangeRed : Colors.Green
+                    };
+                }
+                else
+                {
+                    curLbl = new Label
+                    {
+                        Text = total.ToString(),
+                        HorizontalTextAlignment = TextAlignment.End,
+                        WidthRequest = 50,
+                        TextColor = total < s.min ? Colors.OrangeRed : Colors.Green
+                    };
+                }
                 Add(curLbl, r, 3);
 
                 var btn = new Button { Text = "Ajouter" };
@@ -128,11 +160,10 @@ public sealed class BuilderPage : ContentPage
                 r++;
             }
 
-            // ---- Liste des items ----
+            // Items list
             _listStack.Children.Clear();
             _listStack.Children.Add(new Label { Text = "Unités choisies", FontAttributes = FontAttributes.Bold, Margin = new Thickness(0, 8, 0, 4) });
-            if (_items.Count == 0)
-                _listStack.Children.Add(new Label { Text = "(aucune pour l’instant)", TextColor = Colors.Gray });
+            if (_items.Count == 0) _listStack.Children.Add(new Label { Text = "(aucune pour l’instant)", TextColor = Colors.Gray });
 
             foreach (var it in _items)
             {
@@ -158,7 +189,6 @@ public sealed class BuilderPage : ContentPage
         var options = _cat.units.Where(u => u.faction == _meta.armyId && string.Equals(u.slot, slot, StringComparison.OrdinalIgnoreCase)).ToList();
         if (options.Count == 0) { await DisplayAlert("Aucune unité", $"Pas d’unité pour le slot '{slot}'.", "OK"); return; }
 
-        // si 1 seul type, on passe direct à la config
         ArmyUnit? chosen = null;
         if (options.Count == 1) chosen = options[0];
         else
@@ -191,32 +221,6 @@ public sealed class BuilderPage : ContentPage
         await Navigation.PushAsync(page);
     }
 
-    private async Task RemoveOneAsync(ArmyUnit unit)
-    {
-        var idx = _items.FindIndex(x => x.unit.id == unit.id);
-        if (idx >= 0)
-        {
-            var (u, item) = _items[idx];
-            if (item.qty <= 1) _items.RemoveAt(idx);
-            else
-            {
-                // Crée une nouvelle instance avec qty décrémenté
-                var newItem = new ArmyListItem
-                {
-                    unitId = item.unitId,
-                    qty = item.qty - 1,
-                    @base = item.@base,
-                    size = item.size,
-                    choices = item.choices != null ? new Dictionary<string, string>(item.choices) : null,
-                    counts = item.counts != null ? new Dictionary<string, Dictionary<string, int>>(item.counts) : null
-                };
-                _items[idx] = (u, newItem);
-            }
-            await SaveAsync();
-            Render();
-        }
-    }
-
     private int TotalPoints() => _items.Sum(it => Costing.UnitCost(it.unit, it.item));
 
     private async Task SaveAsync()
@@ -231,6 +235,11 @@ public sealed class BuilderPage : ContentPage
             riteId = _meta.riteId,
             createdAt = _meta.createdAt,
             filePath = _meta.filePath,
+            allegiance = _meta.allegiance,
+            legionId = _meta.legionId,
+            isAlliedDetachment = _meta.isAlliedDetachment,
+            primaryArmyId = _meta.primaryArmyId,
+            primaryLegionId = _meta.primaryLegionId,
             items = _items.Select(x => x.item).ToList()
         };
         await _store.SaveFullAsync(_meta.filePath, full);
@@ -240,8 +249,20 @@ public sealed class BuilderPage : ContentPage
     {
         foreach (var kv in _org!.slots)
         {
-            var cur = _slotCounts.TryGetValue(kv.Key, out var c) ? c : 0;
-            if (cur < kv.Value.min || cur > kv.Value.max) return false;
+            var slot = kv.Key; var req = kv.Value;
+            var total = _slotCounts.GetValueOrDefault(slot);
+            var comp = _compulsoryCounts.GetValueOrDefault(slot);
+
+            if (total > req.max) return false;
+
+            if (slot.Equals("TROOPS", StringComparison.OrdinalIgnoreCase))
+            {
+                if (comp < req.min) return false;
+            }
+            else
+            {
+                if (total < req.min) return false;
+            }
         }
         return true;
     }

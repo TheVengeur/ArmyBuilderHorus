@@ -6,15 +6,15 @@ namespace ArmyBuilderHorus.Services;
 public class ArmyListMeta
 {
     public string name { get; set; } = "";
-    public int points { get; set; }                  // budget déclaré par l’utilisateur
+    public int points { get; set; }
     public string armyId { get; set; } = "";
     public string armyName { get; set; } = "";
     public string focId { get; set; } = "";
     public string? riteId { get; set; }
     public DateTime createdAt { get; set; }
-    public string filePath { get; set; } = "";       // non sérialisé
+    public string filePath { get; set; } = "";
     public string allegiance { get; set; } = "LOYALIST";
-    public string? legionId { get; set; } = null;      // pour LA
+    public string? legionId { get; set; } = null;
     public bool isAlliedDetachment { get; set; } = false;
     public string? primaryArmyId { get; set; } = null;
     public string? primaryLegionId { get; set; } = null;
@@ -23,10 +23,10 @@ public class ArmyListMeta
 public sealed class ArmyListItem
 {
     public string unitId { get; set; } = "";
-    public int qty { get; set; }
-    public int @base { get; set; }                   // coût de base au moment de l’ajout
+    public int qty { get; set; } // for non-squad units; squads => 1
+    public int @base { get; set; }
 
-    public int? size { get; set; }                           // taille d’escouade
+    public int? size { get; set; }                           // squad size
     public Dictionary<string, string>? choices { get; set; } // groupId -> choiceId
     public Dictionary<string, Dictionary<string, int>>? counts { get; set; }
 }
@@ -47,10 +47,14 @@ public sealed class ListStore
         var items = new List<ArmyListMeta>();
         foreach (var f in Directory.GetFiles(Dir, "*.json"))
         {
-            var txt = await File.ReadAllTextAsync(f);
-            var meta = JsonSerializer.Deserialize<ArmyListMeta>(txt, _json) ?? new ArmyListMeta();
-            meta.filePath = f;
-            items.Add(meta);
+            try
+            {
+                var txt = await File.ReadAllTextAsync(f);
+                var meta = JsonSerializer.Deserialize<ArmyListMeta>(txt, _json) ?? new ArmyListMeta();
+                meta.filePath = f;
+                items.Add(meta);
+            }
+            catch { /* skip bad file */ }
         }
         return items.OrderByDescending(x => x.createdAt).ToList();
     }
@@ -63,14 +67,7 @@ public sealed class ListStore
         meta.filePath = filePath;
         return meta;
     }
-    public async Task RenameAsync(string filePath, string newName)
-    {
-        var meta = await GetAsync(filePath) ?? throw new FileNotFoundException(filePath);
-        meta.name = newName;
-        var json = System.Text.Json.JsonSerializer.Serialize(meta,
-            new System.Text.Json.JsonSerializerOptions(System.Text.Json.JsonSerializerDefaults.Web) { WriteIndented = true });
-        await File.WriteAllTextAsync(filePath, json);
-    }
+
     public async Task<ArmyListFull?> LoadFullAsync(string filePath)
     {
         if (!File.Exists(filePath)) return null;
@@ -79,16 +76,37 @@ public sealed class ListStore
         if (full != null) full.filePath = filePath;
         return full;
     }
+
     public async Task SaveFullAsync(string filePath, ArmyListFull full)
     {
         Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
         var json = JsonSerializer.Serialize(full, _json);
         await File.WriteAllTextAsync(filePath, json);
     }
+
+    public async Task RenameAsync(string filePath, string newName)
+    {
+        // essaie de charger la version "full"
+        var full = await LoadFullAsync(filePath);
+        if (full != null)
+        {
+            full.name = newName;
+            await SaveFullAsync(filePath, full);
+            return;
+        }
+
+        // fallback: charge juste le meta, puis ré-écris
+        if (!File.Exists(filePath)) throw new FileNotFoundException(filePath);
+        var txt = await File.ReadAllTextAsync(filePath);
+        var meta = JsonSerializer.Deserialize<ArmyListMeta>(txt, _json) ?? new ArmyListMeta();
+        meta.name = newName;
+        var json = JsonSerializer.Serialize(meta, _json);
+        await File.WriteAllTextAsync(filePath, json);
+    }
+
     public Task DeleteAsync(string filePath)
     {
         if (File.Exists(filePath)) File.Delete(filePath);
         return Task.CompletedTask;
     }
-
 }

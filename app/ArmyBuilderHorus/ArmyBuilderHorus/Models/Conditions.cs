@@ -9,7 +9,7 @@ public sealed class Condition
 
     public bool? is_allied_detachment { get; set; }
 
-    // Pont avec l'armée primaire (utile pour Solar Auxilia alliée)
+    // Pont avec l'armée primaire (utile pour alliés)
     public string? primary_army_is { get; set; }        // ex: LEGIONES_ASTARTES
     public string? primary_legion_is { get; set; }      // ex: DARK_ANGELS
 
