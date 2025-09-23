@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArmyBuilderHorus</name>
+    </assembly>
+    <members>
+        <member name="T:ArmyBuilderHorus.Services.Crypto.AesGcmService">
+            Blob: salt(16) | nonce(12) | ciphertext | tag(16)
+        </member>
+        <member name="T:ArmyBuilderHorus.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

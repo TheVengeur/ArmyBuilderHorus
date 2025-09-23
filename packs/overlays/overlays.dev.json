@@ -1,0 +1,9 @@
+{
+  "when": { "all": [ { "army_is":"LEGIONES_ASTARTES" } ] },
+  "patch": [
+    { "unit_id":"LA_TAC", "add_options":[
+      { "id":"DEV_BADGE", "label":"(DEV) Badge de test", "type":"choice",
+        "choices":[ { "id":"ok","label":"OK","points":0 } ] }
+    ]}
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\builderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\builderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\mylistspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\mylistspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\listdetailpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\listdetailpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\liststore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\liststore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\createlistpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\createlistpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\overlaycomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\overlaycomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\models\\overlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\models\\overlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\rulesengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\rulesengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\models\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\models\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\models\\conditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\models\\conditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\models\\armycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\models\\armycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\models\\packsindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\models\\packsindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\unitconfigpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\unitconfigpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\costing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\costing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\pages\\onboardingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\pages\\onboardingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\packupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\packupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\keystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\keystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\services\\crypto\\aesgcmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\services\\crypto\\aesgcmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|c:\\users\\valen\\armybuilderhorus\\app\\armybuilderhorus\\armybuilderhorus\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41494D3B-A7AC-4BF7-893D-AD534BE3C7C8}|ArmyBuilderHorus\\ArmyBuilderHorus.csproj|solutionrelative:armybuilderhorus\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OverlayComposer.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\OverlayComposer.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\OverlayComposer.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\OverlayComposer.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\OverlayComposer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwv2MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:25:21.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Overlay.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Overlay.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Models\\Overlay.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Overlay.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Models\\Overlay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:25:08.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RulesEngine.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\RulesEngine.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\RulesEngine.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\RulesEngine.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\RulesEngine.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwv0gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:24:48.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Conditions.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Conditions.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Models\\Conditions.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Conditions.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Models\\Conditions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:23:41.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Catalog.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Models\\Catalog.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\Catalog.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Models\\Catalog.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAzwEMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:13:51.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuilderPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\BuilderPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\BuilderPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\BuilderPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\BuilderPage.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwDAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:47:46.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListStore.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\ListStore.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\ListStore.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\ListStore.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\ListStore.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:35:12.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateListPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\CreateListPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\CreateListPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\CreateListPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\CreateListPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:14:49.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListDetailPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\ListDetailPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\ListDetailPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\ListDetailPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\ListDetailPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:36:11.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyListsPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\MyListsPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\MyListsPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\MyListsPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\MyListsPage.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:35:52.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ArmyContext.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\ArmyContext.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Models\\ArmyContext.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\ArmyContext.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Models\\ArmyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:23:25.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UnitConfigPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\UnitConfigPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\UnitConfigPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\UnitConfigPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\UnitConfigPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:26:05.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Costing.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\Costing.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\Costing.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\Costing.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\Costing.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:25:18.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CatalogService.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\CatalogService.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\CatalogService.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\CatalogService.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\CatalogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:14:22.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PacksIndex.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\PacksIndex.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Models\\PacksIndex.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Models\\PacksIndex.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Models\\PacksIndex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:50:50.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\App.xaml.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:28:29.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OnBoardingPage.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\OnBoardingPage.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Pages\\OnBoardingPage.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Pages\\OnBoardingPage.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Pages\\OnBoardingPage.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:28:00.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "KeyStore.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\KeyStore.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\KeyStore.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\KeyStore.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\KeyStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:27:33.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PackUpdater.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\PackUpdater.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\PackUpdater.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\PackUpdater.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\PackUpdater.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:27:15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AesGcmService.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\Crypto\\AesGcmService.cs",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\Services\\Crypto\\AesGcmService.cs",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\Services\\Crypto\\AesGcmService.cs",
+              "RelativeToolTip": "ArmyBuilderHorus\\Services\\Crypto\\AesGcmService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:26:55.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\App.xaml",
+              "RelativeDocumentMoniker": "ArmyBuilderHorus\\App.xaml",
+              "ToolTip": "C:\\Users\\valen\\ArmyBuilderHorus\\app\\ArmyBuilderHorus\\ArmyBuilderHorus\\App.xaml",
+              "RelativeToolTip": "ArmyBuilderHorus\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T07:20:30.693Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
