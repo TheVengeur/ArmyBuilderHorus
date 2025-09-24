@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "catalog.core.json.enc",
-      "bytes": 32032,
-      "sha256": "1920a0002d2baf396e66656de3693324bea1b0f3bd7da76f851808de94d5e819"
+      "bytes": 32024,
+      "sha256": "8df5c25a0be71796eaf702d732f0a464c3cb6d8f84c552efc543480b569a1f39"
     },
     {
       "path": "probe.enc",
-      "bytes": 66,
-      "sha256": "bd1164e144d588ccafd0ce38006398d96c9e03136a29f9baf65835ab7337b3bf"
+      "bytes": 58,
+      "sha256": "d7abb32f3b96c7bd7f132abf32cfbf5bb2574d0e341a08339c428d0bb4beec1c"
     }
   ]
 }
