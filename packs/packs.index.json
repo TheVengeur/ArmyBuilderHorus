@@ -1,6 +1,17 @@
-﻿{
+{
+  "format": 1,
   "version": "2025.09.24d",
-  "packs": [
-    { "id": "core", "file": "catalog.core.json.enc", "version": "2025.09.24d", "sha256": "1920a0002d2baf396e66656de3693324bea1b0f3bd7da76f851808de94d5e819" }
+  "base_url": "https://raw.githubusercontent.com/TheVengeur/ArmyBuilderHorus/main/packs/",
+  "files": [
+    {
+      "path": "catalog.core.json.enc",
+      "bytes": 32032,
+      "sha256": "1920a0002d2baf396e66656de3693324bea1b0f3bd7da76f851808de94d5e819"
+    },
+    {
+      "path": "probe.enc",
+      "bytes": 66,
+      "sha256": "bd1164e144d588ccafd0ce38006398d96c9e03136a29f9baf65835ab7337b3bf"
+    }
   ]
 }
