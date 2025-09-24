@@ -6,12 +6,12 @@
     {
       "path": "catalog.core.json.enc",
       "bytes": 31940,
-      "sha256": "d982ee815a10120ef10119b04ef48e947e5a13da2cb1e1566a0458b134dedea2"
+      "sha256": "25c75c68deb2572ee60aaf070cb4a222a60b20eca64c1a20f7bbbdb69cc41cd6"
     },
     {
       "path": "probe.enc",
       "bytes": 58,
-      "sha256": "b46d2b42771e4c3f02860de711407f76d23e7c120091464b003669313a84c178"
+      "sha256": "94bbdd5baf7b2104b15a7b6e885def964231669c41dc16200a4b3a2733aa5c15"
     }
   ]
 }
